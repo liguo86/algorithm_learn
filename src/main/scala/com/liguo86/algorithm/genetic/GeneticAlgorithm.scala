@@ -129,43 +129,5 @@ class GeneticAlgorithm(val populationSize: Int, val mutationRate: Double, val cr
       }
     }.toArray[Individual]
     new Population(individuals)
-
-    //    // Initialize new population
-    //    val newPopulation = new Population(this.populationSize)
-    //
-    //    // Loop over current population by fitness
-    //    var populationIndex = 0
-    //    while ( {
-    //      populationIndex < population.population.length
-    //    }) {
-    //      val individual = population.getFittest(populationIndex)
-    //      // Loop over individual's genes
-    //      var geneIndex = 0
-    //      while ( {
-    //        geneIndex < individual.chromosome.length
-    //      }) { // Skip mutation if this is an elite individual
-    //        if (populationIndex > this.elitismCount) { // Does this gene need mutation?
-    //          if (this.mutationRate > Math.random) { // Get new gene
-    //            var newGene = 1
-    //            if (individual.chromosome(geneIndex) == 1) newGene = 0
-    //            // Mutate gene
-    //            individual.chromosome.update(geneIndex, newGene)
-    //          }
-    //        }
-    //
-    //        {
-    //          geneIndex += 1; geneIndex - 1
-    //        }
-    //      }
-    //      // Add individual to population
-    //      newPopulation.setIndividual(populationIndex, individual)
-    //
-    //      {
-    //        populationIndex += 1; populationIndex - 1
-    //      }
-    //    }
-    //
-    //    // Return mutated population
-    //    return newPopulation
   }
 }
