@@ -34,7 +34,7 @@ object RobotController {
       ga.isTerminationConditionMet(generation, maxGenerations) == false
     }) { // Print fittest individual from population
       val fittest = population.getFittest(0)
-      System.out.println("G" + generation + " Best solution (" + fittest.fitness + "): " + fittest.toString)
+      println("G" + generation + " Best solution (" + fittest.fitness + "): " + fittest.toString)
       // Apply crossover
       population = ga.crossoverPopulation(population)
       // Apply mutation
@@ -45,8 +45,8 @@ object RobotController {
       generation += 1
     }
 
-    System.out.println("Stopped after " + maxGenerations + " generations.")
+    println("Stopped after " + maxGenerations + " generations.")
     val fittest = population.getFittest(0)
-    System.out.println("Best solution (" + fittest.fitness + "): " + fittest.toString)
+    println("Best solution (" + fittest.fitness + "): " + fittest.toString)
   }
 }
